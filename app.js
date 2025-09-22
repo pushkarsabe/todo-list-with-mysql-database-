@@ -16,7 +16,7 @@ const todoRoute = require('./routes/todo');
 
 app.use("/", (req, res) => {
     const filepath = path.join(__dirname, 'Frontend', 'todo.html');
-    res.sendFile(filePath);
+    res.sendFile(filepath);
 });
 
 app.use("/todo", todoRoute);
