@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#deleteAllTodo {
+    width: 90px;
+}
+
+input[type='text'] {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 6px;
+    width: 65px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00ebeb;
+}
+
+header {
+    background-color: aliceblue;
+    justify-content: center;
+    display: flex;
+    height: 15vh;
+    align-items: center;
+}
+
+.mydiv {
+    background-color: #8fffff;
+    padding: 20px;
+}
+
+#todoform {
+    margin-left: 80px;
+}
+
+#todoInput {
+    width: 330px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.outputDiv h3 {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+/* List styling */
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for the buttons container */
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+/* Button styling */
+#todoList input[type="button"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+#todoList input[type="button"]:hover {
+    background-color: #66ffcc;
+}
+
+/* List item styling */
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccffee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}

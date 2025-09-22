@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Todo List</h2>
+        </div>
+    </header>
+    <main>
+        <div class="mydiv">
+            <form id="todoform">
+                <label>Add Items here</label><br>
+                <input type="text" id="todoInput" placeholder="Enter Title">
+                <button type="submit">Add</button>
+                <button type="button" id="deleteAllTodo" onclick="deleteAll()">Delete All</button>
+            </form>
+        </div>
+        <div class="outputDiv">
+            <h3>Tasks</h3>
+            <ul id="todoList"></ul>
+        </div>
+    </main>
+    <script src="todo.js"></script>
+</body>
+
+</html>
