@@ -8,6 +8,11 @@ const sequelize = new Sequelize(
         host: process.env.DB_HOST,
         port: process.env.DB_PORT,
         dialect: 'mysql',
+        dialectOptions: {
+            ssl: {
+                require: true,
+            }
+        }
     }
 );
 module.exports = sequelize;
