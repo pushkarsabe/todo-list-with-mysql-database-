@@ -11,6 +11,8 @@ const sequelize = new Sequelize(
         dialectOptions: {
             ssl: {
                 require: true,
+                rejectUnauthorized: false,
+                ca: process.env.DB_CERT,
             }
         }
     }
